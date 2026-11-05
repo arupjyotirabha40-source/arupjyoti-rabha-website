@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<title>Arup Jyoti Rabha | Drawing Gallery</title>
+<style>
+:root{--ink:#172033;--muted:#667085;--line:#e9edf2;--saffron:#f28c28;--green:#198754;--paper:#fff;--soft:#f7f8fa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1100px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{height:74px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:20px;font-weight:850;letter-spacing:-.7px}.flag{display:flex;gap:3px;margin-top:5px}.flag i{width:25px;height:4px;border-radius:10px}.flag i:nth-child(1){background:var(--saffron)}.flag i:nth-child(2){background:#dfe4eb}.flag i:nth-child(3){background:var(--green)}
+.navlinks{display:flex;gap:28px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--ink)}
+.hero{padding:105px 0 92px;text-align:center;position:relative;overflow:hidden}.hero:before,.hero:after{content:"";position:absolute;width:230px;height:230px;border-radius:50%;filter:blur(65px);opacity:.14;z-index:-1}.hero:before{background:var(--saffron);left:5%;top:15px}.hero:after{background:var(--green);right:5%;bottom:0}
+.kicker{font-size:12px;letter-spacing:2.4px;text-transform:uppercase;color:var(--muted);font-weight:700}
+h1{font-size:clamp(46px,8vw,88px);letter-spacing:-5px;line-height:1.02;margin:20px 0 18px;font-weight:850}.hero p{font-size:17px;color:var(--muted);margin:0 auto 30px;max-width:520px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 23px;border-radius:999px;background:var(--ink);color:#fff;font-weight:700;font-size:14px;transition:.2s}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 25px #17203322}.btn.light{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.section{padding:64px 0 86px}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}h2{font-size:34px;letter-spacing:-1.5px;margin:0}.sectionhead p{color:var(--muted);margin:0;font-size:14px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.piece{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--soft);transition:.25s}.piece:hover{transform:translateY(-5px);box-shadow:0 15px 35px #17203312}.art{height:270px;display:grid;place-items:center}.art svg{width:100%;height:100%}.pieceinfo{background:white;padding:15px 17px;display:flex;justify-content:space-between;align-items:center}.pieceinfo strong{font-size:14px}.pieceinfo span{font-size:11px;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
+.about{background:var(--soft);border:1px solid var(--line);border-radius:24px;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:25px}.about h2{max-width:450px}.about p{max-width:480px;color:var(--muted);line-height:1.7;margin-bottom:0}
+.contact{padding:80px 0;text-align:center}.contact h2{font-size:clamp(34px,6vw,52px)}.contact p{color:var(--muted);margin:12px 0 25px}.insta{background:linear-gradient(110deg,#f28c28,#e85d8f,#7655c9);color:white}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px}
+@media(max-width:700px){.navlinks{gap:14px}.hero{padding:78px 0 68px}h1{letter-spacing:-3px}.gallery{grid-template-columns:1fr 1fr}.art{height:220px}.about{display:block;padding:27px}.about p{margin-bottom:0}.sectionhead{display:block}.sectionhead p{margin-top:8px}}
+@media(max-width:470px){.wrap{width:min(100% - 28px,1100px)}.navlinks a:first-child{display:none}.gallery{grid-template-columns:1fr}.art{height:245px}.foot{display:block;text-align:center}.foot span{display:block;margin:5px}}
+</style>
+</head>
+<body>
+<header><nav class="wrap">
+  <a href="#home"><div class="logo">Arup Jyoti Rabha</div><div class="flag"><i></i><i></i><i></i></div></a>
+  <div class="navlinks"><a href="#home">Home</a><a href="#gallery">Drawings</a><a href="#contact">Contact</a></div>
+</nav></header>
+<main>
+<section class="hero wrap" id="home">
+  <div class="kicker">Art • Ideas • Imagination</div>
+  <h1>Arup Jyoti<br><span style="background:linear-gradient(90deg,#f28c28 0 43%,#172033 48% 53%,#198754 58%);background-clip:text;-webkit-background-clip:text;color:transparent">Rabha</span></h1>
+  <p>A little space for sketches, colors and creative moments.</p>
+  <a class="btn" href="#gallery">Explore Drawings <span aria-hidden="true">↗</span></a>
+</section>
+<section class="section wrap" id="gallery">
+  <div class="sectionhead"><h2>Drawing Gallery</h2><p>A few creative spaces to begin with</p></div>
+  <div class="gallery">
+    <article class="piece"><div class="art">
+      <svg viewBox="0 0 400 300" role="img" aria-label="Mountain landscape illustration"><rect width="400" height="300" fill="#eef3f4"/><circle cx="300" cy="70" r="34" fill="#f4b36d"/><path d="M0 240 120 75l115 165Z" fill="#9bb4bd"/><path d="m90 240 150-190 160 190Z" fill="#5c8277"/><path d="m210 100 30-50 38 46-26-12-13 16-12-15Z" fill="white"/><path d="M0 235q95-48 190 5t210-4v64H0" fill="#b7c9ad"/></svg>
+    </div><div class="pieceinfo"><strong>Mountain Dreams</strong><span>01 / Art</span></div></article>
+    <article class="piece"><div class="art">
+      <svg viewBox="0 0 400 300" role="img" aria-label="Flower illustration"><rect width="400" height="300" fill="#fbf1ed"/><path d="M200 285q-4-90 0-150" stroke="#4e8765" stroke-width="10" fill="none" stroke-linecap="round"/><path d="M198 225q-95-70-105-5 48 44 105 5" fill="#8bb28c"/><path d="M202 205q75-88 105-25-43 52-105 25" fill="#a9c59a"/><g fill="#e68b83"><ellipse cx="200" cy="92" rx="27" ry="60"/><ellipse cx="200" cy="92" rx="27" ry="60" transform="rotate(60 200 150)"/><ellipse cx="200" cy="92" rx="27" ry="60" transform="rotate(120 200 150)"/></g><circle cx="200" cy="150" r="25" fill="#f4c85d"/></svg>
+    </div><div class="pieceinfo"><strong>Flower Study</strong><span>02 / Art</span></div></article>
+    <article class="piece"><div class="art">
+      <svg viewBox="0 0 400 300" role="img" aria-label="Sunset illustration"><rect width="400" height="300" fill="#f8eee7"/><circle cx="200" cy="125" r="73" fill="#eea16a"/><path d="M0 205q105-65 205 0t195-5v100H0" fill="#7d9c89"/><path d="M0 245q95-55 200 0t200-10v65H0" fill="#466f64"/><path d="M200 202v98" stroke="#f8eee7" stroke-width="3" opacity=".65"/></svg>
+    </div><div class="pieceinfo"><strong>Golden Evening</strong><span>03 / Art</span></div></article>
+  </div>
+  <p style="font-size:13px;color:#667085;margin:18px 2px 0">Sample artwork shown here — replace these with your own drawings whenever you're ready.</p>
+</section>
+<section class="wrap">
+  <div class="about"><div><div class="kicker">Welcome</div><h2>Welcome to my creative corner.</h2></div><p>Arup Jyoti Rabha is a space to share drawings and creative work. Thanks for stopping by and being part of the journey.</p></div>
+</section>
+<section class="contact" id="contact"><div class="wrap">
+  <div class="kicker">Say hello</div><h2>Let’s connect on Instagram.</h2><p>Follow along and see more creative work.</p>
+  <a class="btn insta" href="https://www.instagram.com/arupjyoti_rva/" target="_blank" rel="noopener noreferrer">Instagram @arupjyoti_rva <span aria-hidden="true">↗</span></a>
+</div></section>
+</main>
+<footer><div class="wrap foot"><span>© 2026 Arup Jyoti Rabha</span><span>Made with creativity ♥</span></div></footer>
+</body></html>
